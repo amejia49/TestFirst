@@ -119,13 +119,13 @@ if(largestArray.length===0){
 }
 
 
-function paramify(prop){
-    
-	var object={};
-	object.key=prop;
-	console.log(object.key);
-	for (var i in object){
-	    
+function paramify(obj){
+	var obj = {size:14}
+	
+	for (var key in obj){
+	    console.log(key, obj, obj[key] );
 	}
-	return object;
+	// return object;
 }
+
+

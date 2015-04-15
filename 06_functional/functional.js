@@ -29,8 +29,13 @@ function countWords(string){
 
 function reduce(array,startPoint,newFunc){
      
- 	var sum= array.reduce(newFunc);
-	return sum;
+ // 	var sum= array.reduce(newFunc);
+	// return sum;
+  var currentValue = startPoint 
+	for(var i = 0; i < array.length; i++){
+		currentValue= newFunc(currentValue,array[i]);
+	}
+	return currentValue;
 }
 
 function every(array,newFunc){
